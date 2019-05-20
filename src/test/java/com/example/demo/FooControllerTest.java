@@ -23,7 +23,7 @@ public class FooControllerTest {
 	public void testPrint() throws Exception {	
 		mvc.perform(MockMvcRequestBuilders.get("/foos").contentType(MediaType.APPLICATION_JSON))
 				.andExpect(MockMvcResultMatchers.status().isOk())
-				.andExpect(MockMvcResultMatchers.jsonPath("$.field1").value("Hello!"));
+				.andExpect(MockMvcResultMatchers.jsonPath("$.field1").value("Hello1!"));
 	}
 
 }
